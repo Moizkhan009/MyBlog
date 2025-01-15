@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular App</title>
+    <script>
+      function filterCategories() {
+        const searchInput = document.getElementById("searchBar").value.toLowerCase();
+        const allCategories = document.querySelectorAll(".category");
+
+        allCategories.forEach((category) => {
+          const categoryTitle = category.querySelector("h2").innerText.toLowerCase();
+
+          if (categoryTitle.includes(searchInput)) {
+            category.style.display = "block";  // Show category
+            const cards = category.querySelectorAll(".card");
+            cards.forEach((card) => {
+              card.style.display = "block";  // Show all cards in that category
+            });
+          } else {
+            category.style.display = "none";  // Hide category
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

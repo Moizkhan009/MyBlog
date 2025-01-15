@@ -1,0 +1,16 @@
+/* Example Styles */
+
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+a:hover {
+  color: #15803d;
+  transition: color 0.3s;
+}

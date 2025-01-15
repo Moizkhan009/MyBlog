@@ -1,0 +1,274 @@
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen "
+    style="background-image: url('https://plus.unsplash.com/premium_photo-1683140655656-20448abc55da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">Welcome to Your Programming Heaven</h1>
+      <p class="mt-4 text-lg md:text-xl max-w-3xl">
+        Explore coding tutorials, tech tips, and all things programming. Unleash your potential and take your skills to
+        the next level!
+      </p>
+      <div class="mt-6">
+        <a href="#blogs"
+          class="px-6 py-3 scroll-m-10 bg-green-600 text-white rounded-lg hover:bg-green-700 text-lg font-medium">Explore Blogs</a>
+        <a routerLink="/categories"
+          class="ml-4 px-6 py-3 bg-transparent border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-600 hover:text-white text-lg font-medium">Learn
+          More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Why Choose Our Blog?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-green-600 text-4xl mb-4 text-center">💻</div>
+          <h3 class="text-xl font-bold mb-2">Coding Tutorials</h3>
+          <p>Step-by-step guides to help you master programming languages and frameworks like Python, JavaScript, and
+            more.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-green-600 text-4xl mb-4 text-center">📚</div>
+          <h3 class="text-xl font-bold mb-2">Comprehensive Guides</h3>
+          <p>Detailed resources covering web development, data science, and software engineering principles.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-green-600 text-4xl mb-4 text-center">🌐</div>
+          <h3 class="text-xl font-bold mb-2">Tech News</h3>
+          <p>Stay updated with the latest tech trends, programming updates, and industry insights.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-green-600 text-4xl mb-4 text-center">🔧</div>
+          <h3 class="text-xl font-bold mb-2">Development Tools</h3>
+          <p>Explore essential tools and frameworks for web development, software engineering, and project management.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-green-600 text-4xl mb-4 text-center">📈</div>
+          <h3 class="text-xl font-bold mb-2">Data Analysis</h3>
+          <p>Learn how to analyze data effectively using tools like Python, R, and various data visualization techniques.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <div class="text-green-600 text-4xl mb-4 text-center">⚙️</div>
+          <h3 class="text-xl font-bold mb-2">Automation & DevOps</h3>
+          <p>Explore the world of automation, CI/CD pipelines, and DevOps practices to streamline development and deployment processes.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blogs" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Latest Blogs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Blog Card 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+          <img src="https://source.unsplash.com/400x250/?programming1" alt="Blog Image"
+            class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mastering JavaScript</h3>
+            <p class="text-gray-600">A complete guide to understanding JavaScript concepts and advanced techniques.</p>
+            <input type="checkbox" id="toggle-backend1" class="peer hidden">
+            <label for="toggle-backend1" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+              Read More →
+            </label>
+            <div class="hidden peer-checked:block mt-4 text-gray-700">
+              JavaScript is a versatile language used for both client-side and server-side programming. This blog will dive deep into the language's key features, including closures, promises, async/await, and more.
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+          <img src="https://source.unsplash.com/400x250/?coding1" alt="Blog Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Getting Started with Python</h3>
+            <p class="text-gray-600">Learn Python from scratch with this beginner-friendly guide to programming.</p>
+            <input type="checkbox" id="toggle-backend2" class="peer hidden">
+            <label for="toggle-backend2" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+              Read More →
+            </label>
+            <div class="hidden peer-checked:block mt-4 text-gray-700">
+              Python is an easy-to-learn and powerful programming language. In this blog, you'll explore how to set up your environment, write simple scripts, and understand basic Python concepts like loops, functions, and classes.
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+          <img src="https://source.unsplash.com/400x250/?technology1" alt="Blog Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Future of AI in Tech</h3>
+            <p class="text-gray-600">Explore the exciting possibilities and challenges of artificial intelligence.</p>
+            <input type="checkbox" id="toggle-backend3" class="peer hidden">
+            <label for="toggle-backend3" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+              Read More →
+            </label>
+            <div class="hidden peer-checked:block mt-4 text-gray-700">
+              AI is rapidly changing industries such as healthcare, finance, and transportation. This blog will discuss the current trends in AI, its potential applications, and the ethical challenges it brings.
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+          <img src="https://source.unsplash.com/400x250/?tech1" alt="Blog Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Building Your First App</h3>
+            <p class="text-gray-600">Step-by-step tutorial on building your first mobile or web application from scratch.</p>
+            <input type="checkbox" id="toggle-backend4" class="peer hidden">
+            <label for="toggle-backend4" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+              Read More →
+            </label>
+            <div class="hidden peer-checked:block mt-4 text-gray-700">
+              In this guide, we’ll walk you through the entire process of creating your first app, including design principles, development tools, and deployment techniques.
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+          <img src="https://source.unsplash.com/400x250/?programming2" alt="Blog Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Understanding Algorithms</h3>
+            <p class="text-gray-600">A deep dive into the most common algorithms used in programming and computer science.</p>
+            <input type="checkbox" id="toggle-backend5" class="peer hidden">
+            <label for="toggle-backend5" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+              Read More →
+            </label>
+            <div class="hidden peer-checked:block mt-4 text-gray-700">
+              This blog covers fundamental algorithms like sorting and searching, as well as more advanced algorithms like dynamic programming, graph algorithms, and machine learning algorithms.
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?coding2" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Learning Data Structures</h3>
+    <p class="text-gray-600">Get to know data structures such as arrays, linked lists, trees, and graphs.</p>
+    <input type="checkbox" id="toggle-backend6" class="peer hidden">
+    <label for="toggle-backend6" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Data structures like arrays, linked lists, trees, and graphs are fundamental to programming. Learn about their types and applications.
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card 7 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?tech2" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Cloud Computing Explained</h3>
+    <p class="text-gray-600">Learn about cloud services and how they revolutionize the way businesses scale and operate.</p>
+    <input type="checkbox" id="toggle-backend7" class="peer hidden">
+    <label for="toggle-backend7" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Cloud computing enables on-demand access to a shared pool of computing resources. Learn how it's transforming industries.
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card 8 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?programming3" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Introduction to Machine Learning</h3>
+    <p class="text-gray-600">Start your journey with machine learning, learn basic concepts and algorithms.</p>
+    <input type="checkbox" id="toggle-backend8" class="peer hidden">
+    <label for="toggle-backend8" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Machine learning algorithms allow computers to learn from data and make predictions. Start with the basics and explore more.
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card 9 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?coding3" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Web Development Basics</h3>
+    <p class="text-gray-600">Master the fundamentals of web development including HTML, CSS, and JavaScript.</p>
+    <input type="checkbox" id="toggle-backend9" class="peer hidden">
+    <label for="toggle-backend9" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Learn how to create a website using HTML, CSS, and JavaScript. Understand the basics and move towards building more complex web applications.
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card 10 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?technology3" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Understanding Version Control</h3>
+    <p class="text-gray-600">Learn the importance of version control systems like Git for software development.</p>
+    <input type="checkbox" id="toggle-backend10" class="peer hidden">
+    <label for="toggle-backend10" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Version control allows developers to manage changes in code. Learn Git basics, commands, and workflows for collaboration.
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card 11 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?programming4" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Building REST APIs with Node.js</h3>
+    <p class="text-gray-600">Create your first RESTful API using Node.js and Express in this detailed guide.</p>
+    <input type="checkbox" id="toggle-backend11" class="peer hidden">
+    <label for="toggle-backend11" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Learn to build RESTful APIs using Node.js. This guide covers all the steps to create a functional API with Express and MongoDB.
+    </div>
+  </div>
+</div>
+
+<!-- Blog Card 12 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden card">
+  <img src="https://source.unsplash.com/400x250/?tech4" alt="Blog Image" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold mb-2">Introduction to Cybersecurity</h3>
+    <p class="text-gray-600">Discover the fundamentals of cybersecurity and how to protect your applications and data.</p>
+    <input type="checkbox" id="toggle-backend12" class="peer hidden">
+    <label for="toggle-backend12" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+      Read More →
+    </label>
+    <div class="hidden peer-checked:block mt-4 text-gray-700">
+      Learn the basics of cybersecurity, including protecting networks, systems, and applications from vulnerabilities and attacks.
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+
+</body>

@@ -1,0 +1,444 @@
+<div class="container mx-auto px-6 py-10">
+  <!-- Search Bar -->
+  <div class="mb-6">
+    <input
+      type="text"
+      id="searchBar"
+      placeholder="Search categories or topics..."
+      class="w-full px-4 py-2 border rounded-lg shadow-md focus:outline-none focus:ring focus:border-a5c422 shadow-emerald-600"
+      onkeyup="filterCategories()"
+    />
+  </div>
+
+
+<div class="container mx-auto px-6 py-8 ">
+  <!-- Frontend Development Section -->
+   <div id="categories ">
+  <div class="mb-8 category " data-category="frontend">
+    <h2 class="text-2xl font-bold mb-4 text-green-600">Frontend Development</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_photo-1726754457459-d2dfa2e3a434?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmclMjBjb2RpbmclMjBhaXxlbnwwfHwwfHx8MA%3D%3D" alt="Responsive Design" class="w-full h-48 object-cover  transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Responsive Design</h3>
+          <p class="text-gray-600">Master the art of creating mobile-friendly and flexible layouts.</p>
+          <input type="checkbox" id="toggle1" class="peer hidden">
+          <label for="toggle1" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Responsive design ensures your website looks great on all devices by using fluid grids, flexible images, and media queries. Learn CSS frameworks like Tailwind CSS and Bootstrap to enhance productivity.
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZ3JhbW1pbmclMjBjb2RpbmclMjBhaXxlbnwwfHwwfHx8MA%3D%3D
+        " alt="React.js" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">React.js Basics</h3>
+          <p class="text-gray-600">Learn the fundamentals of React.js to build dynamic UIs.</p>
+          <input type="checkbox" id="toggle2" class="peer hidden">
+          <label for="toggle2" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            React.js is a popular JavaScript library for building user interfaces. Master JSX, components, props, and state management to create interactive and reusable UI elements.
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1pbmclMjBjb2RpbmclMjBhaXxlbnwwfHwwfHx8MA%3D%3D" alt="Tailwind CSS" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Tailwind CSS</h3>
+          <p class="text-gray-600">Use Tailwind CSS to design faster with utility-first CSS.</p>
+          <input type="checkbox" id="toggle3" class="peer hidden">
+          <label for="toggle3" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Tailwind CSS is a utility-first CSS framework that allows you to build modern designs without leaving your HTML. Explore classes for typography, layouts, spacing, and more.
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZ3JhbW1pbmclMjBjb2RpbmclMjBhaXxlbnwwfHwwfHx8MA%3D%3D" alt="HTML5" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">HTML5 Essentials</h3>
+          <p class="text-gray-600">Discover the power of semantic HTML and new HTML5 features.</p>
+          <input type="checkbox" id="toggle4" class="peer hidden">
+          <label for="toggle4" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            HTML5 introduces semantic tags, improved multimedia support, and powerful APIs for web development. Master the essentials for building modern web pages.
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1690683789978-3cf73960d650?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmclMjBjb2RpbmclMjBhaXxlbnwwfHwwfHx8MA%3D%3D" alt="Advanced CSS" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Advanced CSS Techniques</h3>
+          <p class="text-gray-600">Learn CSS Grid, Flexbox, animations, and advanced styling.</p>
+          <input type="checkbox" id="toggle5" class="peer hidden">
+          <label for="toggle5" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Advanced CSS techniques like CSS Grid, Flexbox, and keyframe animations allow you to create highly customizable layouts and modern, dynamic user interfaces.
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2dyYW1taW5nJTIwY29kaW5nJTIwYWklMjBqYXZhc2NyaXB0JTIwaHRtbCUyMGNzcyUyMHRhaWx3aW5kfGVufDB8fDB8fHww" alt="JavaScript ES6" class="w-full h-48 object-cover  transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">JavaScript ES6+ Features</h3>
+          <p class="text-gray-600">Dive into modern JavaScript features like ES6+ syntax and modules.</p>
+          <input type="checkbox" id="toggle6" class="peer hidden">
+          <label for="toggle6" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            ES6+ introduces modern features like arrow functions, classes, modules, destructuring, and promises, making JavaScript more powerful and easier to write.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mx-auto px-6 py-8">
+  <!-- Backend Development Section -->
+  <div class="mb-8 category" data-category="backend">
+    <h2 class="text-2xl font-bold mb-4 text-green-600 ">Backend Development</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_photo-1663040543387-cb7c78c4f012?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="Node.js Basics" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Node.js Basics</h3>
+          <p class="text-gray-600">Learn the fundamentals of Node.js for server-side programming.</p>
+          <input type="checkbox" id="toggle-backend1" class="peer hidden">
+          <label for="toggle-backend1" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Node.js is a runtime environment that enables JavaScript to run on the server. Learn how to build APIs, handle requests, and use popular frameworks like Express.js.
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1604145559206-e3bce0040e2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJhY2tlbmR8ZW58MHx8MHx8fDA%3D" alt="Database Management" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Database Management</h3>
+          <p class="text-gray-600">Master the art of working with SQL and NoSQL databases.</p>
+          <input type="checkbox" id="toggle-backend2" class="peer hidden">
+          <label for="toggle-backend2" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Database management involves using SQL (MySQL, PostgreSQL) or NoSQL (MongoDB) databases to store, retrieve, and manage data. Learn to write efficient queries and optimize data storage.
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1667372393138-3a5dc3ba517d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFja2VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="API Development" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">API Development</h3>
+          <p class="text-gray-600">Create and manage APIs for communication between systems.</p>
+          <input type="checkbox" id="toggle-backend3" class="peer hidden">
+          <label for="toggle-backend3" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            API development involves creating RESTful or GraphQL APIs for seamless communication between frontend and backend. Use tools like Postman for testing and frameworks like Express.js or Flask.
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_photo-1664299072583-584882c00a5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJhY2tlbmQlMjBoYWNraW5nfGVufDB8fDB8fHww" alt="Backend Security" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Backend Security</h3>
+          <p class="text-gray-600">Learn techniques to secure your backend applications.</p>
+          <input type="checkbox" id="toggle-backend4" class="peer hidden">
+          <label for="toggle-backend4" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Backend security involves implementing techniques like authentication, encryption, and data validation to protect applications from threats like SQL injection and XSS attacks.
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://media.istockphoto.com/id/2013970996/photo/computer-equipment-on-desk-in-cybersecurity-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=6VZ_hc_l4UjbqAJTFW10Q9dCY5BLzN4_8v7F4UzSm2I=" alt="Authentication" class="w-full h-48 object-cove transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">User Authentication</h3>
+          <p class="text-gray-600">Implement secure user login and authentication systems.</p>
+          <input type="checkbox" id="toggle-backend5" class="peer hidden">
+          <label for="toggle-backend5" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Authentication systems ensure secure user access. Learn to implement OAuth, JWT, and session-based authentication in your backend applications.
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://media.istockphoto.com/id/2123111672/photo/web-development-man-holds-development-icons-website-design-programming-on-virtual-web.webp?a=1&b=1&s=612x612&w=0&k=20&c=tzkC8emf0eNzFKDIRb5tOSGNMKPRpZ77jm5fqzj_m1M=" alt="Backend Deployment" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Backend Deployment</h3>
+          <p class="text-gray-600">Deploy and manage backend applications on cloud platforms.</p>
+          <input type="checkbox" id="toggle-backend6" class="peer hidden">
+          <label for="toggle-backend6" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Learn to deploy backend applications using platforms like AWS, Heroku, or DigitalOcean. Understand CI/CD pipelines, Docker, and scaling techniques for robust backend systems.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mx-auto px-6 py-8">
+  <!-- Mobile Development Section -->
+  <div class="mb-8 category" data-category="mobile">
+    <h2 class="text-2xl font-bold mb-4 text-green-600">Mobile Development</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_vector-1682309289526-a70f4b0967a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwZGV2ZWxvcG5tZW50fGVufDB8fDB8fHww" alt="Android Development" class="cursor-pointer w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Android Development</h3>
+          <p class="text-gray-600">Learn to build native Android apps using Java and Kotlin.</p>
+          <input type="checkbox" id="toggle-mobile1" class="peer hidden">
+          <label for="toggle-mobile1" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Android development allows you to create apps for millions of Android devices. Master tools like Android Studio, and learn to use Java or Kotlin for robust app development.
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1565867686135-6aa9945b0fa5?w=294&dpr=1&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8YkJzNkcxWndVWkF8fGVufDB8fHx8fA%3D%3D
+        " alt="iOS Development" class="cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">iOS Development</h3>
+          <p class="text-gray-600">Build elegant iOS apps with Swift and Xcode.</p>
+          <input type="checkbox" id="toggle-mobile2" class="peer hidden">
+          <label for="toggle-mobile2" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            iOS development focuses on creating apps for Apple devices. Learn Swift programming and how to use Xcode for building polished, high-performance apps.
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_vector-1733661317770-b062afa92bc4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1pbmclMjBjb2RpbmclMjBhaSUyMGphdmFzY3JpcHQlMjBodG1sJTIwY3NzJTIwdGFpbHdpbmR8ZW58MHx8MHx8fDA%3D
+        " alt="Flutter Development" class="cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Flutter Framework</h3>
+          <p class="text-gray-600">Create beautiful cross-platform apps using Flutter.</p>
+          <input type="checkbox" id="toggle-mobile3" class="peer hidden">
+          <label for="toggle-mobile3" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Flutter is a UI toolkit by Google for building natively compiled apps for mobile, web, and desktop. Learn Dart language and Flutter widgets for fast and responsive development.
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://media.istockphoto.com/id/1026448878/photo/desktop-source-code-and-wallpaper-by-computer-language-with-coding-and-programming.webp?a=1&b=1&s=612x612&w=0&k=20&c=sEFi7KAoBTraOfBhkxTdwI80otyvbLVGABUTgqx070w=
+        " alt="React Native" class="cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">React Native</h3>
+          <p class="text-gray-600">Build cross-platform apps using React Native.</p>
+          <input type="checkbox" id="toggle-mobile4" class="peer hidden">
+          <label for="toggle-mobile4" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            React Native is a popular framework for building cross-platform apps using JavaScript and React. Learn how to leverage native components and libraries for seamless app development.
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_vector-1734019346692-db33ea3f03d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww
+        " alt="Mobile UI/UX Design" class="cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Mobile UI/UX Design</h3>
+          <p class="text-gray-600">Design intuitive and visually appealing mobile interfaces.</p>
+          <input type="checkbox" id="toggle-mobile5" class="peer hidden">
+          <label for="toggle-mobile5" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Mobile UI/UX focuses on creating user-friendly designs for apps. Learn about wireframing, prototyping, and using tools like Figma to design seamless user experiences.
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_vector-1711987810156-4793e4aa786e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D
+        " alt="Mobile App Testing" class="cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Mobile App Testing</h3>
+          <p class="text-gray-600">Test and optimize mobile apps for performance and quality.</p>
+          <input type="checkbox" id="toggle-mobile6" class="peer hidden">
+          <label for="toggle-mobile6" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Mobile app testing ensures your apps run smoothly on various devices. Learn about manual and automated testing tools like Appium and ensure compatibility across platforms.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mx-auto px-6 py-8">
+  <!-- Machine Learning & AI Section -->
+  <div class="mb-8 category " data-category="ai">
+    <h2 class="text-2xl font-bold mb-4 text-green-600">Machine Learning & Artificial Intelligence</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://media.istockphoto.com/id/2149530993/photo/digital-human-head-concept-for-ai-metaverse-and-facial-recognition-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=nyP4c-s5cSZy1nv1K0xn1ynC-Xuc1sY4Y29ZQqcrztA=
+        " alt="Machine Learning Basics" class=" cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Machine Learning Basics</h3>
+          <p class="text-gray-600">Get started with the fundamentals of machine learning.</p>
+          <input type="checkbox" id="toggle-ml1" class="peer hidden">
+          <label for="toggle-ml1" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Machine Learning is a subset of AI that allows computers to learn from data. Explore key concepts like supervised and unsupervised learning, and understand how models are trained and evaluated.
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1638437447465-033e33537dab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJvYm90c3xlbnwwfHwwfHx8MA%3D%3D
+        " alt="Deep Learning" class="cursor-pointer transform transition-transform duration-300 hover:scale-125 w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Deep Learning</h3>
+          <p class="text-gray-600">Learn about neural networks and their applications.</p>
+          <input type="checkbox" id="toggle-ml2" class="peer hidden">
+          <label for="toggle-ml2" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Deep Learning focuses on neural networks with multiple layers. Learn about convolutional neural networks (CNNs), recurrent neural networks (RNNs), and how they are used in image and speech recognition.
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://media.istockphoto.com/id/1998660059/photo/ai-artificial-intelligence-security-sentinel-password-cyber-security-ransomware-email.webp?a=1&b=1&s=612x612&w=0&k=20&c=b38xp_lw0-upEvjodUgwq9NNC8Lw4uDAS-SATyfr1hI=
+        " alt="AI Ethics" class="cursor-pointer w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">AI Ethics</h3>
+          <p class="text-gray-600">Understand ethical considerations in AI development.</p>
+          <input type="checkbox" id="toggle-ml3" class="peer hidden">
+          <label for="toggle-ml3" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            AI ethics focuses on responsible AI development, ensuring fairness, transparency, and privacy. Learn how to mitigate bias and build systems that respect ethical principles.
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_vector-1725372199832-32fef84e123b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWl8ZW58MHx8MHx8fDA%3D
+        " alt="Data Science" class="cursor-pointer w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Data Science</h3>
+          <p class="text-gray-600">Analyze and interpret data for actionable insights.</p>
+          <input type="checkbox" id="toggle-ml4" class="peer hidden">
+          <label for="toggle-ml4" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            Data Science involves analyzing data using statistics, visualization, and machine learning techniques. Tools like Python, R, and SQL are used to derive insights from data.
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://images.unsplash.com/photo-1593376893114-1aed528d80cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFpJTIwcm9ib3RzfGVufDB8fDB8fHww
+        " alt="AI in Robotics" class="cursor-pointer w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">AI in Robotics</h3>
+          <p class="text-gray-600">Discover how AI powers modern robotics systems.</p>
+          <input type="checkbox" id="toggle-ml5" class="peer hidden">
+          <label for="toggle-ml5" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer transform transition-transform duration-300 hover:scale-125">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            AI in robotics helps machines perceive, plan, and interact with the world. Explore topics like computer vision, robotic control systems, and autonomous navigation.
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+        <img src="https://plus.unsplash.com/premium_vector-1712873279566-379ba42df159?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWl8ZW58MHx8MHx8fDA%3D
+        " alt="Natural Language Processing" class=" cursor-pointer w-full h-48 object-cover transform transition-transform duration-300 hover:scale-125">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Natural Language Processing</h3>
+          <p class="text-gray-600">Learn how machines understand and process language.</p>
+          <input type="checkbox" id="toggle-ml6" class="peer hidden">
+          <label for="toggle-ml6" class="mt-4 inline-block text-green-600 font-medium hover:underline cursor-pointer">
+            Read More →
+          </label>
+          <div class="hidden peer-checked:block mt-4 text-gray-700">
+            NLP enables computers to understand human language. Learn about sentiment analysis, chatbots, and text generation using NLP libraries like NLTK and spaCy.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+

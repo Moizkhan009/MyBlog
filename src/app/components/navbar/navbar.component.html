@@ -1,0 +1,152 @@
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Left: Logo -->
+        <div class="flex-shrink-0 group ">
+          <a routerLink="" class="  text-green-600 hover:font-lg inline-block text-2xl font-bold transition-transform duration-300 ease-in-out group-hover:scale-125 group-hover:animate-shake">MyBlog</a>
+        </div>
+
+
+
+        <!-- Center: Navigation Links -->
+        <div class="hidden md:flex space-x-8">
+          <a routerLink="" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+          <a routerLink="/about" class="text-gray-700 hover:text-green-600 font-medium">About</a>
+          <a routerLink="/contact" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+          <a routerLink="/blogs" class="text-gray-700 hover:text-green-600 font-medium">Blogs</a>
+          <a routerLink="/categories" class="text-gray-700 hover:text-green-600 font-medium">Categories</a>
+        </div>
+
+        <!-- Right: Login and Register Buttons -->
+        <div class="hidden md:flex space-x-4">
+          <label for="loginModal"
+            class="cursor-pointer px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Login</label>
+          <label for="registerModal"
+            class="cursor-pointer px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Register</label>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Trigger Button -->
+
+<!-- Hidden Checkbox to Control the Modal -->
+<input type="checkbox" id="loginModal" class="peer hidden" />
+
+<!-- Modal -->
+<div class="fixed inset-0 bg-gray-900 bg-opacity-100  justify-center items-center peer-checked:flex hidden z-[999]">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+    <!-- Close Button -->
+    <label for="loginModal" class="absolute top-4 right-4 text-gray-500 hover:text-black cursor-pointer text-xl font-bold">✖</label>
+
+    <!-- Modal Content -->
+    <h2 class="text-2xl font-bold text-center mb-6 text-green-600">Login</h2>
+
+    <!-- Form -->
+    <form>
+      <!-- Email -->
+      <label for="email" class="block mb-2 text-gray-700 font-medium">Email</label>
+      <input type="email" id="email" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-300" placeholder="Enter your email" required>
+
+      <!-- Password -->
+      <label for="password" class="block mb-2 text-gray-700 font-medium">Password</label>
+      <input type="password" id="password" class="w-full p-3 mb-6 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-300" placeholder="Enter your password" required>
+
+      <!-- Login Button -->
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Login</button>
+    </form>
+
+    <!-- OR Divider -->
+    <div class="flex items-center justify-center my-6">
+      <hr class="w-1/4 border-gray-300">
+      <span class="px-4 text-gray-500">OR</span>
+      <hr class="w-1/4 border-gray-300">
+    </div>
+
+    <!-- Social Login Buttons -->
+    <div class="flex flex-col space-y-4">
+      <button class="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="w-5 h-5 mr-2">
+        <span class="font-medium">Login with Google</span>
+      </button>
+
+      <button class="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5 mr-2">
+        <span class="font-medium">Login with GitHub</span>
+      </button>
+
+      <button class="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="w-5 h-5 mr-2">
+        <span class="font-medium">Login with Facebook</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Register Modal -->
+
+<!-- Hidden Checkbox to Control the Modal -->
+<input type="checkbox" id="registerModal" class="peer hidden" />
+
+<!-- Modal -->
+<div class="fixed inset-0 bg-gray-900 bg-opacity-100   justify-center items-center peer-checked:flex hidden z-50">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+    <!-- Close Button -->
+    <label for="registerModal" class="absolute top-4 right-4 text-gray-500 hover:text-black cursor-pointer text-xl font-bold">✖</label>
+
+    <!-- Modal Content -->
+    <h2 class="text-2xl font-bold text-center mb-6 text-green-600">Register</h2>
+
+    <!-- Form -->
+    <form>
+      <!-- Name -->
+      <label for="name" class="block mb-2 text-gray-700 font-medium">Full Name</label>
+      <input type="text" id="name" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-300" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email" class="block mb-2 text-gray-700 font-medium">Email</label>
+      <input type="email" id="email" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-300" placeholder="Enter your email" required>
+
+      <!-- Password -->
+      <label for="password" class="block mb-2 text-gray-700 font-medium">Password</label>
+      <input type="password" id="password" class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-300" placeholder="Enter your password" required>
+
+      <!-- Confirm Password -->
+      <label for="confirmPassword" class="block mb-2 text-gray-700 font-medium">Confirm Password</label>
+      <input type="password" id="confirmPassword" class="w-full p-3 mb-6 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-green-300" placeholder="Confirm your password" required>
+
+      <!-- Register Button -->
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Register</button>
+    </form>
+
+    <!-- OR Divider -->
+    <div class="flex items-center justify-center my-6">
+      <hr class="w-1/4 border-gray-300">
+      <span class="px-4 text-gray-500">OR</span>
+      <hr class="w-1/4 border-gray-300">
+    </div>
+
+    <!-- Social Registration Buttons -->
+    <div class="flex flex-col space-y-4">
+      <button class="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="w-5 h-5 mr-2">
+        <span class="font-medium">Register with Google</span>
+      </button>
+
+      <button class="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5 mr-2">
+        <span class="font-medium">Register with GitHub</span>
+      </button>
+
+      <!-- <button class="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="w-5 h-5 mr-2">
+        <span class="font-medium">Register with Facebook</span>
+      </button> -->
+    </div>
+  </div>
+</div>
+
+</body>
