@@ -1,7 +1,28 @@
-<!-- app.component.html -->
-
-<footer class="bg-gray-900 text-green-600 py-8 ">
+<footer class="bg-gray-900 text-green-600 py-12">
   <div class="container mx-auto px-6">
+    <!-- Stay Updated Section -->
+    <div class="container mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Stay Updated!</h2>
+      <p class="text-lg text-gray-300 mb-6">
+        Subscribe to our newsletter and never miss a blog or tutorial.
+      </p>
+      <form class="flex flex-col md:flex-row justify-center gap-4">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full md:w-1/3 p-3 rounded-lg text-gray-800"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-white text-green-500 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer Content -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- About Section -->
       <div>
@@ -16,7 +37,7 @@
       <div>
         <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
         <ul class="text-gray-300 text-sm">
-          <li><a href="" class="hover:text-white">Home</a></li>
+          <li><a href="/" class="hover:text-white">Home</a></li>
           <li><a href="/categories" class="hover:text-white">Categories</a></li>
           <li><a href="/about" class="hover:text-white">About</a></li>
           <li><a href="/contact" class="hover:text-white">Contact</a></li>
@@ -26,14 +47,18 @@
       <!-- Contact Section -->
       <div>
         <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-        <p class="text-gray-300 text-sm font-semibold">Email: contact <span class="text-green-600 font-bold">MyBlog.com</span> </p>
+        <p class="text-gray-300 text-sm font-semibold">
+          Email: contact<span class="text-green-600 font-bold">MyBlog.com</span>
+        </p>
         <p class="text-gray-300 text-sm font-semibold">Phone: +92 3242443882</p>
       </div>
     </div>
 
     <!-- Footer Bottom -->
-    <div class="mt-8 border-t border-gray-700 pt-4 text-center">
-      <p class="text-gray-300 text-sm">&copy; 2025 <span class="text-green-600 font-bold">MyBlog.com</span>. All Rights Reserved.</p>
+    <div class="mt-12 border-t border-gray-700 pt-4 text-center">
+      <p class="text-gray-300 text-sm">
+        &copy; 2025 <span class="text-green-600 font-bold">MyBlog.com</span>. All Rights Reserved.
+      </p>
     </div>
   </div>
 </footer>
