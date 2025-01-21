@@ -4,6 +4,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { TutorialsComponent } from './pages/tutorials/tutorials.component';
+import { TipsComponent } from './pages/tips/tips.component';
 
 export const routes: Routes = [
 
@@ -31,9 +32,14 @@ export const routes: Routes = [
   },
 
   {
-     path:'tutorials',
+     path:'resources',
      component:TutorialsComponent,
 
+  },
+
+  {
+    path: 'tips',
+    component: TipsComponent,
   }
 
 

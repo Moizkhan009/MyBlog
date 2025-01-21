@@ -270,27 +270,7 @@
     </div>
   </section>
 
-  <div class="bg-gray-100">
-    <!-- Testimonials Section -->
-    <section class="py-16 px-6 bg-white">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">What People Say</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-gray-50 shadow-lg rounded-lg p-6">
-            <p class="text-gray-600 italic mb-4">"This blog has been a game changer in improving my coding skills!"</p>
-            <h3 class="text-lg font-semibold text-gray-800">- Burhan Shah</h3>
-          </div>
-          <div class="bg-gray-50 shadow-lg rounded-lg p-6">
-            <p class="text-gray-600 italic mb-4">"Great tutorials and real-world projects. Highly recommended!"</p>
-            <h3 class="text-lg font-semibold text-gray-800">- Malak</h3>
-          </div>
-          <div class="bg-gray-50 shadow-lg rounded-lg p-6">
-            <p class="text-gray-600 italic mb-4">"The detailed explanations are so easy to follow. Awesome resource!"</p>
-            <h3 class="text-lg font-semibold text-gray-800">- Tariq Khan</h3>
-          </div>
-        </div>
-      </div>
-    </section></div>
+
 
 
 
@@ -298,98 +278,169 @@
 
 
     <!-- Upcoming Events Section -->
-    <section class="py-16 px-6 bg-gray-100">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Upcoming Events</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Live Coding Session</h3>
-            <p class="text-gray-600">Date: January 20, 2025</p>
-            <p class="text-gray-600">Topic: JavaScript Debugging Tips</p>
-            <a href="#" class="text-blue-500 mt-4 inline-block">Learn More</a>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">CSS Masterclass</h3>
-            <p class="text-gray-600">Date: February 10, 2025</p>
-            <p class="text-gray-600">Topic: Advanced Animations</p>
-            <a href="#" class="text-blue-500 mt-4 inline-block">Learn More</a>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Angular Workshop</h3>
-            <p class="text-gray-600">Date: March 5, 2025</p>
-            <p class="text-gray-600">Topic: Angular Routing</p>
-            <a href="#" class="text-blue-500 mt-4 inline-block">Learn More</a>
-          </div>
+<section class="py-16 px-6 bg-white">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Upcoming Events</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Event Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Live Coding Session</h3>
+        <p class="text-gray-600">Date: January 20, 2025</p>
+        <p class="text-gray-600">Topic: JavaScript Debugging Tips</p>
+
+        <!-- Toggle for Read More -->
+        <input type="checkbox" id="event-1" class="peer hidden" />
+        <label for="event-1" class="text-green-600 mt-4 inline-block cursor-pointer">
+          Read More
+        </label>
+
+        <!-- Hidden Content -->
+        <div class="mt-4 max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 ease-in-out">
+          <p class="text-gray-600">Join this live session where you'll learn how to effectively debug JavaScript code, identify common errors, and utilize developer tools.</p>
         </div>
       </div>
-    </section>
 
+      <!-- Event Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">CSS Masterclass</h3>
+        <p class="text-gray-600">Date: February 10, 2025</p>
+        <p class="text-gray-600">Topic: Advanced Animations</p>
 
+        <!-- Toggle for Read More -->
+        <input type="checkbox" id="event-2" class="peer hidden" />
+        <label for="event-2" class="text-green-600 mt-4 inline-block cursor-pointer">
+          Read More
+        </label>
 
-
-  <div class="bg-gray-100 mb-8">
-    <!-- Resource Downloads Section -->
-    <section class="py-16 px-6 bg-white">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Free Resources</h2>
-        <p class="text-lg text-gray-600 text-center mb-8">Download programming cheat sheets, guides, and e-books for free!</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-          <div class="bg-gray-50 shadow-lg rounded-lg p-6 text-center">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">CSS Animation Guide</h3>
-            <a href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf"
-            download
-            class="bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-green-600 transition">
-           Download Animation Guide
-         </a>
-                   </div>
-          <div class="bg-gray-50 shadow-lg rounded-lg p-6 text-center">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">JavaScript Cheat Sheet</h3>
-            <a href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf"
-            download
-            class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition">
-           Download Cheat Sheet
-         </a>
-                   </div>
-
-          <div class="bg-gray-50 shadow-lg rounded-lg p-6 text-center">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">Python for Beginners</h3>
-            <a href="\Downloads\beginners_python_cheat_sheet_pcc_all.pdf"
-            download
-            class="bg-green-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-green-600 transition">
-           Download Animation Guide
-         </a>
-                   </div>
+        <!-- Hidden Content -->
+        <div class="mt-4 max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 ease-in-out">
+          <p class="text-gray-600">Learn advanced CSS animation techniques, including keyframes, transitions, and creating interactive effects for modern web projects.</p>
         </div>
       </div>
-    </section>
+
+      <!-- Event Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Angular Workshop</h3>
+        <p class="text-gray-600">Date: March 5, 2025</p>
+        <p class="text-gray-600">Topic: Angular Routing</p>
+
+        <!-- Toggle for Read More -->
+        <input type="checkbox" id="event-3" class="peer hidden" />
+        <label for="event-3" class="text-green-600 mt-4 inline-block cursor-pointer">
+          Read More
+        </label>
+
+        <!-- Hidden Content -->
+        <div class="mt-4 max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300 ease-in-out">
+          <p class="text-gray-600">Explore Angular routing techniques to build dynamic and scalable single-page applications with ease.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <div class="bg-gray-100">
+      <!-- Testimonials Section -->
+      <section class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">What People Say</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 shadow-lg rounded-lg p-6">
+              <p class="text-gray-600 italic mb-4">"This blog has been a game changer in improving my coding skills!"</p>
+              <h3 class="text-lg font-semibold text-gray-800">- Burhan Shah</h3>
+            </div>
+            <div class="bg-gray-50 shadow-lg rounded-lg p-6">
+              <p class="text-gray-600 italic mb-4">"Great tutorials and real-world projects. Highly recommended!"</p>
+              <h3 class="text-lg font-semibold text-gray-800">- Malak</h3>
+            </div>
+            <div class="bg-gray-50 shadow-lg rounded-lg p-6">
+              <p class="text-gray-600 italic mb-4">"The detailed explanations are so easy to follow. Awesome resource!"</p>
+              <h3 class="text-lg font-semibold text-gray-800">- Tariq Khan</h3>
+            </div>
+          </div>
+        </div>
+      </section></div>
 
     <!-- FAQs Section -->
-    <section class="py-16 px-6 bg-gray-100">
+    <section class="py-16 px-6 bg-white">
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
         <div class="space-y-6">
+
+          <!-- Question 1 -->
           <div class="bg-white shadow-lg rounded-lg p-4">
-            <h3 class="text-lg font-semibold text-gray-800">Q: How can I start learning programming?</h3>
-            <p class="text-gray-600 mt-2">A: Start by learning the basics of HTML, CSS, and JavaScript. Follow tutorials and build small projects.</p>
+            <input type="checkbox" id="faq-1" class="peer hidden">
+            <label for="faq-1" class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">Q: How can I start learning programming?</h3>
+              <span class="text-gray-500 peer-checked:rotate-180 transform transition-transform duration-300">▼</span>
+            </label>
+            <p class="text-gray-600 mt-2 max-h-0 overflow-hidden peer-checked:max-h-48 transition-all duration-300">
+              A: Start by learning the basics of HTML, CSS, and JavaScript. Follow tutorials and build small projects.
+            </p>
           </div>
+
+          <!-- Question 2 -->
           <div class="bg-white shadow-lg rounded-lg p-4">
-            <h3 class="text-lg font-semibold text-gray-800">Q: What languages do you recommend for beginners?</h3>
-            <p class="text-gray-600 mt-2">A: Python is great for beginners, followed by JavaScript for web development.</p>
+            <input type="checkbox" id="faq-2" class="peer hidden">
+            <label for="faq-2" class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">Q: What languages do you recommend for beginners?</h3>
+              <span class="text-gray-500 peer-checked:rotate-180 transform transition-transform duration-300">▼</span>
+            </label>
+            <p class="text-gray-600 mt-2 max-h-0 overflow-hidden peer-checked:max-h-48 transition-all duration-300">
+              A: Python is great for beginners, followed by JavaScript for web development.
+            </p>
           </div>
+
+          <!-- Question 3 -->
           <div class="bg-white shadow-lg rounded-lg p-4">
-            <h3 class="text-lg font-semibold text-gray-800">Q: Do you provide source code for your projects?</h3>
-            <p class="text-gray-600 mt-2">A: Yes, all project source codes are shared on my GitHub or linked in the blogs.</p>
+            <input type="checkbox" id="faq-3" class="peer hidden">
+            <label for="faq-3" class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">Q: Do you provide source code for your projects?</h3>
+              <span class="text-gray-500 peer-checked:rotate-180 transform transition-transform duration-300">▼</span>
+            </label>
+            <p class="text-gray-600 mt-2 max-h-0 overflow-hidden peer-checked:max-h-48 transition-all duration-300">
+              A: Yes, all project source codes are shared on my GitHub or linked in the blogs.
+            </p>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="bg-white shadow-lg rounded-lg p-4">
+            <input type="checkbox" id="faq-4" class="peer hidden">
+            <label for="faq-4" class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">Q: How long does it take to learn programming?</h3>
+              <span class="text-gray-500 peer-checked:rotate-180 transform transition-transform duration-300">▼</span>
+            </label>
+            <p class="text-gray-600 mt-2 max-h-0 overflow-hidden peer-checked:max-h-48 transition-all duration-300">
+              A: It depends on your dedication, but with consistent effort, you can learn the basics in 3-6 months.
+            </p>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="bg-white shadow-lg rounded-lg p-4">
+            <input type="checkbox" id="faq-5" class="peer hidden">
+            <label for="faq-5" class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">Q: What is the best way to practice programming?</h3>
+              <span class="text-gray-500 peer-checked:rotate-180 transform transition-transform duration-300">▼</span>
+            </label>
+            <p class="text-gray-600 mt-2 max-h-0 overflow-hidden peer-checked:max-h-48 transition-all duration-300">
+              A: Work on real-world projects, participate in coding challenges, and contribute to open-source projects.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
 
-  </div>
 
 
- 
+
+
 
 
 

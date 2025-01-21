@@ -5,10 +5,11 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TutorialsComponent } from './pages/tutorials/tutorials.component';
+import { TipsComponent } from './pages/tips/tips.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HeroSectionComponent,FooterComponent,TutorialsComponent],
+  imports: [RouterOutlet,NavbarComponent,HeroSectionComponent,FooterComponent,TutorialsComponent,TipsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
