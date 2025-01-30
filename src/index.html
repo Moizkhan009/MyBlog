@@ -4,26 +4,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angular App</title>
+    <title>MyBlog</title>
     <script>
-      function filterCategories() {
-        const searchInput = document.getElementById("searchBar").value.toLowerCase();
-        const allCategories = document.querySelectorAll(".category");
+     function filterCategories() {
+    const searchInput = document.getElementById("searchBar").value.toLowerCase();
+    const allCategories = document.querySelectorAll(".category");
+    const noResultsMessage = document.getElementById("no-results-message");
+    let resultFound = false; // Flag to check if results are found
 
-        allCategories.forEach((category) => {
-          const categoryTitle = category.querySelector("h2").innerText.toLowerCase();
+    allCategories.forEach((category) => {
+        const categoryTitle = category.querySelector("h2").innerText.toLowerCase();
 
-          if (categoryTitle.includes(searchInput)) {
+        if (categoryTitle.includes(searchInput)) {
             category.style.display = "block";  // Show category
             const cards = category.querySelectorAll(".card");
             cards.forEach((card) => {
-              card.style.display = "block";  // Show all cards in that category
+                card.style.display = "block";  // Show all cards in that category
             });
-          } else {
+            resultFound = true; // Set flag if result is found
+        } else {
             category.style.display = "none";  // Hide category
-          }
-        });
-      }
+        }
+    });
+
+    // If no results were found, show the "No results found" message
+    if (!resultFound) {
+        noResultsMessage.style.display = "block";
+    } else {
+        noResultsMessage.style.display = "none";
+    }
+}
+
 
 
 
